@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idk</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/piechart.css">
+    
+    <!-- Java Script -->
+    <script src="js/piechart.js"></script>
+
+    <!-- Js FrameWorks -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+<body class="center">
+    
+    <h1 class="center titlu">Procentaj Voturi</h1>
+
+    <div id="container-chart-pc" class="center">
+
+        <div id="chart-pc">
+
+            <canvas id="chartFete"></canvas>
+        
+            <script>
+                var xValueFete = ["Fata a", "Fata b", "Fata c", "Fata d", "Fata e", "Fata f"];
+                var yValueFete = [55, 49, 44, 24, 15, 20];
+                var barColors    = [
+                  "#b91d47",
+                  "#00aba9",
+                  "#2b5797",
+                  "#e8c3b9",
+                  "#1e7145",
+                  "#a2d2ff"
+                ];
+                
+                new Chart("chartFete", {
+                  type: "pie",
+                  data: {
+                    labels: xValueFete,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValueFete
+                    }]
+                  },
+                  options: {
+                    title: {
+                      display: true,
+                      text: "Fete"
+                    }
+                  }
+                });
+                </script>
+    
+
+        </div>
+
+        <div id="chart-pc">
+
+            <canvas id="chartBaieti" style="margin-top: 50px;"></canvas>
+                
+            <script>
+                var xValuesBaieti = ["Baiat a", "Baiat b", "Baiat c", "Baiat d", "Baiat e", "Baiat f"];
+                var yValuesBaieti = [24, 20, 44, 55, 15, 49];
+                var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+                "#e8c3b9",
+                "#1e7145",
+                "#a2d2ff"
+                ];
+                
+                new Chart("chartBaieti", {
+                type: "pie",
+                data: {
+                    labels: xValuesBaieti,
+                    datasets: [{
+                    backgroundColor: barColors,
+                    data: yValuesBaieti
+                    }]
+                },
+                options: {
+                    title: {
+                    display: true,
+                    text: "Baieti"
+                    }
+                }
+                });
+                </script>
+            
+
+        </div>
+
+    </div>
+
+    <div id="container-chart-tel" class="center">
+        
+    </div>
+
+</body>
+</html>

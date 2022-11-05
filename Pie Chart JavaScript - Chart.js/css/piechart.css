@@ -1,0 +1,30 @@
+
+#container-chart-pc{
+    display: block;
+    width: 43.75rem;
+    height: 43.75rem; 
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+#container-chart-tel{
+    display: none;
+}
+
+#myChart{
+    width:100%;
+    max-width: 43.75rem;
+}
+
+
+#chart-pc{
+    
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 0.625rem;
+    text-align: center;
+  }
